@@ -1,7 +1,7 @@
 # MyWeb
 ## 網站說明
 
-一個XXX的網站
+一個XXX的網站，學習自![Diane-Su@github.com](https://github.com/Diane-Su)。
 
 ---
 ## Requirements
