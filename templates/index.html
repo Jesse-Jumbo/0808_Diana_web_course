@@ -1,0 +1,133 @@
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PTWA</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="item">
+            PTWA
+        </div>
+        <div class="item">
+            社團法人中華民國愛自造者學習協會
+        </div>
+        <div class="item">
+            捐款支持
+        </div>
+        <div class="item">
+            志工登入
+        </div>
+        <div class="item">
+            關於我們
+        </div>
+        <div class="item">
+            我們的耕耘
+        </div>
+        <div class="item">
+            教材分享
+        </div>
+        <div class="item">
+            聯絡我們
+        </div>
+    </div>
+    <div class="big_bg big_bg_1">
+        <div class="filiter">
+            <div class="home-content wrapper">
+                <h2 class="page-title">Program The World</h2>
+                <p>歡迎蒞臨本網站，感謝您的支持~</p>
+            </div>
+        </div>
+    </div>
+    <div class="big_bg big_bg_2">
+        <div class="content right">
+            <div class="filiter">
+                <div class="text">
+                    <h2 class="page-title">關於我們</h2>
+                    <p>鑒於城鄉學校教學資源的差距,2013 年起,
+                        由國立成功大學資訊工程系-蘇文鈺教授推動「Program the World」計畫,到偏鄉地區教導孩子寫程式。
+                        並於 2016 年 3 月正式成立「社團法人中華民國愛自造者學習協會」(PTWA),
+                        以致力於程式(Programming)與自造(Maker)等開放課程內容的開發,教學與推廣,課程以合適青少年學習為主,
+                        並以服務偏鄉與弱勢教育為宗旨,提供偏鄉與弱勢學童更多受教的資源與機會。
+                        並於2022年改選理事長，由詹怡宜女士(現任TVBS新聞部副總)接任，以其女性先天的慈愛與纖細心思，
+                        PTWA將更深化對於弱勢的資訊科技教育的工作。</p>
+                </div>
+                <a href="https://programtheworld.tw/about/about?pagetarget=us"><button class="button">Read
+                        More</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="big_bg big_bg_3">
+        <div class="content left">
+            <div class="filiter">
+                <div class="text">
+                    <h2 class="page-title">教材分享</h2>
+                    <p>PTWA持續致力於開發程式設計與 maker教學的開源教具。協會亦與不同地區與領域的老師共同合作開源教材分享給大家!
+                        感謝各方注重教育的朋友們的支持與合作,讓協會可以繼續開發多元性的教案教具,嘉惠更多師生。</p>
+                </div>
+                <a href="https://programtheworld.tw/material/material"><button class="button">Read
+                        More</button></a>
+            </div>
+        </div>
+    </div>
+    <a href="https://programtheworld.tw/donate/donate">
+        <div class="big_bg_4">
+            <img src="/static/images/donate.jpg" style="visibility: hidden;" />
+        </div>
+    </a>
+    <div class="form">
+        <div class="grid">
+            <h1 class="md_title">聯絡我們</h1>
+            <form class="grid" action="/" method="post">
+                <div><input class="input_text" type="text" name="name" placeholder="您的姓名" /></div>
+                <div><input class="input_text" type="text" name="email" placeholder="您的信箱" /></div>
+                <div><input class="input_text" type="text" name="message" placeholder="您的訊息" /></div>
+                <input class="button" type="submit" value="送出" />
+            </form>
+        </div>
+    </div>
+    <div class="flex mt-20"  style="background-color:#EAEDED;">
+        <div class="center flex w-100p">
+            <div class="w-100p m-30 ml-60">
+                <span class="foot_title">ABOUT</span>
+                <p>
+                    辦公室:台南市東區勝利路85號<br>
+                    地址:台南市崇善路205巷12號6樓<br>
+                    電話:06-2081464<br>
+                    service@programtheworld.tw<br>
+                    服務時間 週⼀⾄週五 9:00 am~5:00pm<br>
+                    ⽴案字號：台內團字第1050024600號<br>
+                </p>
+            </div>
+            <div class="w-100p m-30 ml-60">
+                <span class="foot_title">SOCIAL</span>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><span class="link">粉絲專頁</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: 1px solid #d5d5e0;width:200px;"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top:20px;"><img src="/static/images/logo.jpg" width="300px;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% if data != undefined %}
+        {% if data == True %}
+            <script>alert("送出成功!")</script>     <!--警告視窗-->
+        {% else %}
+            <script>alert("送出失敗!")</script>     <!--警告視窗-->
+        {% endif %}
+    {% endif %}
+</body>
+
+</html>
